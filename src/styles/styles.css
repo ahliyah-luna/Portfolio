@@ -63,8 +63,8 @@ body::before {
 .content {
 	min-height: 100vh;
 	padding: 52px 64px 48px 64px;
-	display: grid;
-	grid-template-rows: auto 1fr auto;
+	display: flex;
+	flex-direction: column;
 }
 
 .top,
@@ -73,7 +73,7 @@ body::before {
 }
 
 .works {
-	align-self: center;
+	margin: auto 0;
 }
 
 .intro {
