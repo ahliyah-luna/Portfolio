@@ -147,6 +147,7 @@ body::before {
 	gap: 20px;
 	font-size: 18px;
 	width: 100%;
+	padding-top: 28px;
 }
 
 .footer-right {
@@ -304,6 +305,34 @@ body::before {
 	color: #910212;
 }
 
+.project-pdf-actions {
+	margin: 0 0 14px 0;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.project-pdf-download {
+	color: inherit;
+	text-decoration: none;
+}
+
+.project-pdf-download:hover {
+	color: #910212;
+}
+
+.project-pdf-wrap {
+	border: 1px solid rgba(0, 0, 0, 0.14);
+	background: rgba(255, 255, 255, 0.35);
+	width: min(980px, 100%);
+}
+
+.project-pdf {
+	width: 100%;
+	height: min(56vh, 620px);
+	border: 0;
+	display: block;
+}
+
 .project-drawer-overlay {
 	position: fixed;
 	inset: 0;
@@ -411,6 +440,7 @@ body::before {
 
 	.footer {
 		font-size: 16px;
+		padding-top: 22px;
 	}
 
 	.work-list {

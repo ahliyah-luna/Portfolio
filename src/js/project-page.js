@@ -136,10 +136,17 @@ function main() {
 
 	if (project.pdf) {
 		bodyEl.innerHTML = `
-			<h2 class="section-title">FILE</h2>
-			<p class="project-link">
-				<a href="${escapeHtml(project.pdf)}" target="_blank" rel="noreferrer">Open PDF</a>
-			</p>
+			<div class="project-pdf-actions">
+				<a class="project-pdf-download" href="${escapeHtml(project.pdf)}" download>Download PDF</a>
+			</div>
+			<div class="project-pdf-wrap">
+				<iframe
+					class="project-pdf"
+					title="${escapeHtml(project.title)} PDF preview"
+					src="${escapeHtml(project.pdf)}"
+					loading="lazy"
+				></iframe>
+			</div>
 		`;
 		return;
 	}
