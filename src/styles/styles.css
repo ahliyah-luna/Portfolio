@@ -166,13 +166,17 @@ body::before {
 @media (max-width: 900px) {
 	.layout {
 		grid-template-columns: 1fr;
+		padding-left: 0;
+		padding-top: 18px;
 	}
 
 	.strip {
-		min-height: 260px;
-		background-repeat: repeat-x;
-		background-position: top left;
-		background-size: auto 260px;
+		background-image: url("../assets/images/horizontalstrip.png");
+		height: 200px;
+		min-height: 200px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
 	}
 
 	.content {
@@ -181,5 +185,9 @@ body::before {
 
 	.intro {
 		font-size: 22px;
+	}
+
+	.footer {
+		font-size: 16px;
 	}
 }
